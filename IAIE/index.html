@@ -6250,17 +6250,17 @@ R, podemos usar tabelas de contingência.</p>
 <div id="árvores-de-decisão-random-forest-e-logit-multinomial-em-dados-bancários" class="section level1" number="23">
 <h1><span class="header-section-number">23</span> Árvores de Decisão,
 Random Forest e Logit Multinomial em Dados Bancários</h1>
-<div id="árvores-de-decisão" class="section level3" number="23.0.1">
-<h3><span class="header-section-number">23.0.1</span> Árvores de
-Decisão</h3>
+<div id="árvores-de-decisão" class="section level2" number="23.1">
+<h2><span class="header-section-number">23.1</span> Árvores de
+Decisão</h2>
 <p>Árvores de decisão são modelos de classificação e regressão que
 dividem os dados em segmentos homogêneos com base nas características
 explicativas. Cada nó representa uma decisão baseada em critérios como
 índice de Gini, entropia ou erro de classificação. As folhas da árvore
 indicam a classe de saída ou valor de predição.</p>
-<div id="exemplo-prático-15" class="section level4" number="23.0.1.1">
-<h4><span class="header-section-number">23.0.1.1</span> Exemplo
-Prático</h4>
+<div id="exemplo-prático-15" class="section level3" number="23.1.1">
+<h3><span class="header-section-number">23.1.1</span> Exemplo
+Prático</h3>
 <p>Vamos construir uma árvore de decisão simples para classificar
 clientes usando <code>idade</code> e <code>renda</code> como preditores
 para a variável <code>cliente</code>.</p>
@@ -6291,15 +6291,15 @@ em cada categoria.</li>
 </ul>
 </div>
 </div>
-<div id="random-forest" class="section level3" number="23.0.2">
-<h3><span class="header-section-number">23.0.2</span> Random Forest</h3>
+<div id="random-forest" class="section level2" number="23.2">
+<h2><span class="header-section-number">23.2</span> Random Forest</h2>
 <p>Random Forest combina várias árvores de decisão para melhorar a
 precisão do modelo. Ele constrói múltiplas árvores com diferentes
 amostras de dados e variáveis, e a predição final é determinada pela
 maioria das árvores.</p>
-<div id="vantagens-do-random-forest" class="section level4" number="23.0.2.1">
-<h4><span class="header-section-number">23.0.2.1</span> Vantagens do
-Random Forest</h4>
+<div id="vantagens-do-random-forest" class="section level3" number="23.2.1">
+<h3><span class="header-section-number">23.2.1</span> Vantagens do
+Random Forest</h3>
 <ul>
 <li><strong>Redução do Overfitting</strong>: A combinação de múltiplas
 árvores reduz a chance de overfitting, o que ocorre quando o modelo se
@@ -6326,16 +6326,16 @@ clientes.</li>
 </ul>
 </div>
 </div>
-<div id="logit-multinomial" class="section level3" number="23.0.3">
-<h3><span class="header-section-number">23.0.3</span> Logit
-Multinomial</h3>
+<div id="logit-multinomial" class="section level2" number="23.3">
+<h2><span class="header-section-number">23.3</span> Logit
+Multinomial</h2>
 <p>O Logit Multinomial é utilizado quando a variável dependente tem mais
 de duas categorias. Ele estende o modelo logístico binário para lidar
 com múltiplas classes, modelando a probabilidade de cada categoria em
 relação a uma de referência.</p>
-<div id="exemplo-prático-16" class="section level4" number="23.0.3.1">
-<h4><span class="header-section-number">23.0.3.1</span> Exemplo
-Prático</h4>
+<div id="exemplo-prático-16" class="section level3" number="23.3.1">
+<h3><span class="header-section-number">23.3.1</span> Exemplo
+Prático</h3>
 <p>Vamos prever a escolha de produtos bancários (<code>A</code>,
 <code>B</code> ou <code>C</code>) com base na <code>idade</code> e
 <code>renda</code> do cliente.</p>
@@ -6402,9 +6402,9 @@ estudo tenha poder estatístico suficiente para detectar efeitos
 significativos, evitando erros tipo I e II. A escolha do tamanho
 amostral depende do nível de confiança, variabilidade dos dados e
 precisão desejada.</p>
-<div id="fórmula-geral-para-tamanho-amostral" class="section level3" number="24.0.1">
-<h3><span class="header-section-number">24.0.1</span> Fórmula Geral para
-Tamanho Amostral</h3>
+<div id="fórmula-geral-para-tamanho-amostral" class="section level2" number="24.1">
+<h2><span class="header-section-number">24.1</span> Fórmula Geral para
+Tamanho Amostral</h2>
 <p>Para uma média populacional, a fórmula do tamanho amostral é:</p>
 <p><span class="math display">\[
 n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2
@@ -6413,9 +6413,9 @@ n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2
 distribuição normal para o nível de confiança desejado. - <strong><span class="math inline">\(\sigma\)</span></strong>: Desvio padrão estimado.
 - <strong><span class="math inline">\(E\)</span></strong>: Erro máximo
 aceitável.</p>
-<div id="exemplo-prático-17" class="section level4" number="24.0.1.1">
-<h4><span class="header-section-number">24.0.1.1</span> Exemplo
-Prático</h4>
+<div id="exemplo-prático-17" class="section level3" number="24.1.1">
+<h3><span class="header-section-number">24.1.1</span> Exemplo
+Prático</h3>
 <p>Vamos calcular o tamanho amostral necessário para estimar a média de
 renda de uma população com um erro máximo de 5000 e um nível de
 confiança de 95%. O desvio padrão estimado é 20000.</p>
@@ -6436,18 +6436,18 @@ um nível de confiança de 95%.</li>
 </ul>
 </div>
 </div>
-<div id="cálculo-para-proporções" class="section level3" number="24.0.2">
-<h3><span class="header-section-number">24.0.2</span> Cálculo para
-Proporções</h3>
+<div id="cálculo-para-proporções" class="section level2" number="24.2">
+<h2><span class="header-section-number">24.2</span> Cálculo para
+Proporções</h2>
 <p>Para estimar proporções, a fórmula é:</p>
 <p><span class="math display">\[
 n = \frac{Z_{\alpha/2}^2 \cdot p \cdot (1 - p)}{E^2}
 \]</span></p>
 <p>Onde: - <strong><span class="math inline">\(p\)</span></strong>:
 Proporção estimada. - <strong><span class="math inline">\(E\)</span></strong>: Margem de erro.</p>
-<div id="exemplo-prático-18" class="section level4" number="24.0.2.1">
-<h4><span class="header-section-number">24.0.2.1</span> Exemplo
-Prático</h4>
+<div id="exemplo-prático-18" class="section level3" number="24.2.1">
+<h3><span class="header-section-number">24.2.1</span> Exemplo
+Prático</h3>
 <p>Queremos estimar a proporção de clientes satisfeitos com uma margem
 de erro de 5% e um nível de confiança de 95%. Estimamos que 60% dos
 clientes estão satisfeitos.</p>
